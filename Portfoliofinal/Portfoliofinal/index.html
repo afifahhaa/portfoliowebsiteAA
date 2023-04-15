@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<title>Afifah Andinan - Full Stack Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('IMG_20220825_172042.jpg');
+  min-height: 100%;
+}
+</style>
+
+<body>
+<!-- Sidebar with image -->
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center">
+    <a href="#" class="w3-bar-item w3-button w3-text-pink w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-text-pink w3-hover-black" onclick="closeNav()">Portfolio</a>
+    <a href="#about" class="w3-bar-item w3-button w3-text-pink w3-hover-black" onclick="closeNav()">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-text-pink w3-hover-black" onclick="closeNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  <!-- Menu icon to open sidebar -->
+  <span class="w3-button w3-top w3-pink w3-xxlarge w3-text-pink w3-hover-text-pink" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+  <!-- Header -->
+  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <h1 class="w3-jumbo w3-text-pink"><b> Afifah Andinan</b></h1>
+    <h1 class="w3-jumbo w3-text-pink"><p><b>Full Stack Developer</b></p></h1>
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
+    <img src="/w3images/profile_girl.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
+    <button class="w3-button w3-pink w3-padding-large w3-section">
+      <a href="/resume.pdf" download><b>📥 Download my CV</b></a>
+      </button>
+  </header>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-pink"><b>My Portfolio</b></h2>
+    <hr class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <p><b>Past Final Project during degree course</b></p>
+        <img src="one.jpg" style="width:100%">
+        <img src="seven.jpg" style="width:100%">
+      </div>
+
+      <p><p><p>
+
+      <div class="w3-half">
+        <p><b>SQL TRIGGER exercise</b></p>
+        <img src="sqltriggerexercisepartone.jpg" style="width:100%">
+        <img src="sqltriggerexerciseparttwo.jpg" style="width:100%">
+        <img src="sqltriggerexercisepartthree.jpg" style="width:100%">
+        <img src="sqltriggerexercisepartfour.jpg" style="width:100%">
+      </div>
+
+      <p><p><p>
+
+      <div class="w3-half">
+        <p><b>Command Line Interface calculator with node</b></p>
+        <img src="CLIcalculator.png" style="width:100%">
+      </div>
+
+      <p><p><p>
+
+      <div class="w3-half"></div>
+      <p><b>Chat function using React, Javascript (JSX), nodes, API</b></p>
+      <button class="w3-button w3-pink w3-padding-large w3-section">
+        <a href="/Chat Function.pdf" download><b>📥 Download setup from PDF</b></a>
+        </button>
+        <img src="chat.png" style="width:50%">
+      </div>
+    <!-- End photo grid -->
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-pink w3-padding-32" id="about">
+    <h2>About Me</h2>
+    <hr class="w3-opacity">
+    <div class="card">
+        <div class="card-body">
+            <i class="fa fa-pen fa-xs edit"></i>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><b>Name</b></td>
+                        <td>:</td>
+                        <td><b>Hajah Nurul Afifah Binti Haji Awang Andinan/ Adenan</b></td>
+                    </tr>
+
+                    <tr>
+                        <td><b>Hobbies</b></td>
+                        <td>:</td>
+                        <td><b>Swimming,Running, Fitness, Reading, any social activities</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Job</b></td>
+                        <td>:</td>
+                        <td><b>Backend Developer</b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Skill</b></td>
+                        <td>:</td>
+                        <td><b>Programming language, API, Multimedia and Critical Thinking skill </b></td>
+                    </tr>
+                    <tr>
+                        <td><b>Training Course</b></td>
+                         <td>:</td>
+                        <td><b>Microsoft Azure Fundamental , Microsoft Security, Compliance and Identity Fundamental, and AWS CLOUD TRAINING BOOTCAMP</b></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><b>other workshop Joined</b></td>
+                            <td>: </td>
+                                <td><b>cloud computing workshop,basic bookkeeping workshop.</b></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    <br>
+
+    <div class="w3-row w3-center w3-dark-pink w3-padding-16 w3-section">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><b>95%</b></span><br>
+       <b>Multimedia Software such as Adobe Photoshop, Macromedia Director, Macromedia Dreamweaver, Wix.com website design platform</b> 
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><b>85%</b></span><br>
+        <b>Programming language such as HTML, CSS, JAVASCRIPT, C++, C#, JAVA, WEB PROGRAMMING WITH PHP and JAVA, MySQL, PHPMyAdmin</b>
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><b>85%</b></span><br>
+        <b>Unity Programming, API and research</b>
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge"><b>90%</b></span><br>
+        <b>Critical Thinking</b>
+      </div>
+    </div>
+
+    <div class="w3-container w3-card w3-light-pink w3-margin-bottom">
+        <h2 class="w3-text-pink w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><b>Work Experience</b></h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>iReady Program with IT SYSTEM ENGINEER/  Technology, Research and Development (Pixelated Enterprise)</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>5th December 2017 – November 2020</b></h6>
+          <p><ol type="I">
+            <li><b>Evaluate all latest technologies to provide support to all businesses and maintain effectiveness of 
+                all program and implement all strategies.</b></li>
+            <li><b>Perform regular security audits on processes.</b></li>
+            <li><b>Assist all executive team member and stakeholders to design business requirements and 
+                objectives for systems.</b></li>
+            <li><b>Develop effective relationship with all internal customers and provide 24x7 infrastructure support 
+                    and provide emergency support as well.</b></li>
+            <li><b>Provide an interface with control documents and prepare risks mitigation plans and prepare 
+                        functional flow diagrams and coordinate with various managers and allocate departmental 
+                        resources for systems.</b></li>
+            <li><b>Provide technical expertise and design all systems as per client requirement and perform 
+                            troubleshoot on all control systems for electrical and distribution system.</b></li>
+            <li><b>Provide support for system engineering process.</b></li>
+            <li><b>Perform troubleshoot on all hardware and software system and analyze data to recommend 
+                improvements to ensure efficiency of projects.</b></li>
+            <li><b>Develop and implement all new strategies for all procedures.</b></li>
+            <li><b>Monitor all activities to prevent all unauthorized access to servers and coordinate with security 
+                team and perform audit on systems.</b></li>
+            <li><b>Design system architecture and design operational requirements for all systems and monitor all 
+                configuration.</b></li>
+            •<li><b>Any other assignment which maybe provide from time to time</b></li></ol></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b> BDNSW SUPPORT STAFF - System Analyst (Alif Technology )</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>13rd April 2016 to 30th September 2017</b></h6>
+          <p> <b>Project Support staff for the analysis and testing the web applciaiton of Brunei New Single Window under Custom Department. 
+            i have mostly analysis, brief and testing the system for department in E-custom section, 
+            online payment for Permit payment section, electronic pay with credit cards section, online payment for excise Duty section, Port 
+            Clearance system for government agencies and shipping agents section, and certificate of origin for government 
+            agencies and forwarding agents section. </b> </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-pink w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity w3-text-pink"><b>IGS COLLEGE under Limkokwing University</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>2011-2014</b></h6>
+          <p><h6 class="w3-opacity w3-text-pink"><b>Bachelor of Science in Information Tehnologies</b></h6></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity w3-text-pink"><b>Micronet International College under NCC EDUCATION UK</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>2009-2010</b></h6>
+          <p><h6 class="w3-opacity w3-text-pink"><b>NCC INTERNATIONAL ADVANCE DIPLOMA IN COMPUTER STUDIES</b></h6></p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity w3-text-pink"><b>Micronet International College under NCC EDUCATION UK</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><b>2007-2008</b></h6>
+          <p><h6 class="w3-opacity w3-text-pink"><b>NCC INTERNATIONAL DIPLOMA IN COMPUTER STUDIES</b></h6></p><br>
+        </div>
+      </div>
+
+
+
+    <!-- End Right Column -->
+    </div>
+   
+    
+  <!-- End About Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="flex items-center min-h-screen bg-gray-50 dark:bg-pink-900">
+    <div class="container mx-auto">
+      <div class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm">
+        <div class="text-center">
+          <h1 class="my-3 text-3xl font-bold text-pink-700 dark:text-pink-200">
+            Contact Us
+          </h1>
+          <p class="text-gray-400 dark:text-pink-400">
+           <b>Fill up the form below to send me a message.</b> 
+          </p>
+        </div>
+        <div class="m-7">
+          <form action="https://formspree.io/f/mzbqvaza" method="POST" enctype="multipart/form-data" id="contactForm" name="contactForm">
+            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+            <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+            <input type="checkbox" name="botcheck" id="" style="display: none;" />
+  
+            <div class="mb-6">
+              <label for="name" class="block mb-2 text-sm text-pink-600 dark:text-pink-400"><b>Full Name</b></label>
+              <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="block mb-2 text-sm text-pink-600 dark:text-pink-400"><b>Email Address</b></label>
+              <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="text-sm text-pink-600 dark:text-pink-400"><b>Phone Number</b></label>
+              <input type="text" name="phone" id="phone" placeholder="+673 (888) 1234" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block mb-2 text-sm text-pink-600 dark:text-pink-400"><b>Your Message</b></label>
+  
+              <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+            </div>
+            <div class="mb-6">
+              <button type="submit" class="w-full px-3 py-4 text-pink bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none">
+               <b> Send Message </b>
+              </button>
+            </div>
+            <p class="text-base text-center text-pink-400" id="result"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+  <!-- End Contact Section -->
+  </div>  
+
+ 
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-light-pink w3-center w3-opacity w3-xlarge" style="margin:-24px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+  
+<!-- END PAGE CONTENT -->
+</div>
+
+<script>
+// Open and close sidebar
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+//contact form submission
+const form = document.getElementById("form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 5000);
+    });
+});
+</script>
+
+</body>
+</html>
